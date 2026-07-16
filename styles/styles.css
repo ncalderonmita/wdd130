@@ -1,6 +1,13 @@
+:root {
+    --border: 1px solid black;
+    --padding: 2px;
+
+}
+
 main {
     max-width: 840px;
 }
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -23,33 +30,30 @@ p {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
+    border: var(--border);
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid black;
+    border: var(--border);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
+
 aside img {
     width: 200px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
+    border: var(--border);
+    padding: var(--padding);
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border);
     text-align: center;
 }
-
-
-
-
